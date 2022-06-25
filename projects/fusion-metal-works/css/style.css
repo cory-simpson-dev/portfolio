@@ -1,0 +1,414 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+html {
+     font-size: 62.5%;
+     font-family: 'Teko', sans-serif;
+}
+
+a {
+     text-decoration: none;
+     color: black;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* 
+
+*/
+/* HEADER */
+/* 
+
+*/
+
+header {
+     /* border: 2px solid black; */
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     height: 4rem;
+}
+
+header img {
+     height: 2rem;
+}
+header nav {
+     flex-basis: 60%;
+     max-height: 40px;
+}
+
+header ul {
+     /* border: 2px solid black; */
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+}
+
+header li {
+     font-size: 1.4rem;
+}
+
+header a:hover {
+     text-shadow: .2rem black;
+}
+
+/* 
+
+*/
+/* MAIN */
+/* 
+
+*/
+
+main {
+     /* border: 2px solid black; */
+     display: flex;
+     flex-flow: row;
+     justify-content: space-around;
+     align-items: flex-start;
+     align-content: flex-start;
+     height: 44rem;
+     padding: 5rem;
+     /* background: url("assets/main-background.jpg") no-repeat 0 0; */
+     background-size: cover;
+     background-image: url('../assets/main-background.jpg');
+}
+
+main > section {
+     width: 50%;
+     height: 100%;
+     display: flex;
+     flex-flow: column wrap;
+     justify-content: space-around;
+     color: #fff;
+}
+
+main h1 {
+     font-size: 4rem;
+     text-transform: uppercase;
+}
+
+div.spaceAround {
+     display: flex;
+     flex-flow: column nowrap;
+     justify-content: space-around;
+     height: 16rem;
+     width: 30rem;
+}
+
+div.spaceAround p {
+     font-size: 2rem;
+}
+
+span.blackBox {
+     background: black;
+     color: white;
+     padding: 1rem;
+     font-size: 1.4rem;
+}
+
+span.blackBox,
+main > section > section{
+     width: 14rem;
+}
+
+span.blackBox a {
+     color: white;
+}
+main > section > section{
+     height: 14rem;
+     /* border: 2px solid black; */
+     /* background: black; */
+     color: white;
+     display: flex;
+     flex-flow: column nowrap;
+     justify-content: space-around;
+     align-items: flex-start;
+     border: none;
+}
+
+div.space {
+     height: 30rem;
+     width: 30rem;
+}
+
+span.whiteBorder {
+     border-left: 2px solid #fff;
+     font-size: 1.2rem;
+}
+
+span.whiteBorder + p em {
+     font-size: 3rem;
+}
+
+span.whiteBorder + p {
+     font-size: 1.6rem;
+     text-align: center;
+}
+
+span.whiteBackground {
+     background: white;
+     width: 10rem;
+     display: flex;
+     justify-content: center;
+     align-self: center;
+}
+
+span.whiteBackground a {
+     /* padding: .5rem; */
+     width: 100%;
+     text-align: center;
+     font-weight: 500;
+     text-transform: capitalize;
+     font-size: 1.4rem;
+}
+
+#firstVisit span {
+     /* border: 2px solid black; */
+     padding: .5rem 1rem;
+}
+
+
+/* 
+
+*/
+/* ABOUT SECTION */
+/* 
+
+*/
+
+section.about{
+     /* border: 2px solid black; */
+     height: 40rem;
+     padding: 5rem;
+     display: flex;
+     flex-flow: row;
+     align-content: center;
+     justify-content: space-around;
+     column-gap: 2rem;
+}
+
+section.about section {
+     height: 100%;
+     width: 50%;
+     min-width: 30rem;
+     display: flex;
+     flex-flow: column nowrap;
+     justify-content: center;
+     gap: 2rem;
+}
+
+section.about h2 {
+     font-size: 3rem;
+}
+section.about p {
+     font-size: 1.6rem;
+}
+
+section.about > span.blackBox {
+     text-transform: capitalize;
+}
+
+section.about video {
+     align-self: center;
+     width: 30rem;
+}
+/* 
+
+*/
+/* SERVICES */
+/* 
+
+*/
+
+section.services {
+     /* border: 2px solid black; */
+     height: 28rem;
+     padding: 5rem;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+     background: #e5e1e0;
+}
+
+section.services section {
+     display: flex;
+     flex-flow: column wrap;
+     align-items: center;
+     width: 14rem;
+     height: 18rem;
+     min-width: 14rem;
+     min-height: 18rem;
+     justify-content: space-around;
+}
+
+section.services section img {
+     width: 8rem;
+     height: 8rem;
+}
+section.services section span {
+     font-size: 2rem;
+     text-transform: uppercase;
+}
+
+section.services section p {
+     text-align: center;
+     font-size: 1.4rem;
+}
+
+/* 
+
+*/
+/* PROJECTS */
+/* 
+
+*/
+
+section.projects {
+     /* border: 2px solid black; */
+     padding: 5rem;
+     height: 90rem;
+     display: flex;
+     flex-flow: column wrap;
+     justify-content: center;
+     align-items: center;
+     gap: 3rem;
+}
+
+section.projects figure {
+     height: 30%;
+     width: 27rem;
+     background: black;
+}
+
+section.projects figure img {
+     height: 100%;
+     width: 100%;
+     object-fit: cover;
+}
+
+section.projects figure video {
+     height: 100%;
+     width: 100%;
+     object-fit: cover;
+}
+
+section.projects figcaption {
+     text-align: center;
+     font-size: 1.6rem;
+     display: none;
+}
+
+section.projects figure.twiceAsTall {
+     height: 60%;
+     background: black;
+}
+
+section.projects figure.thriceAsTall {
+     height: 94%;
+     background: black;
+}
+
+/* 
+
+*/
+/* PROJECTS */
+/* 
+
+*/
+
+footer {
+     border-top: 2px solid black;
+     background: #e5e1e0;
+     height: 14rem;
+     display: flex;
+     justify-content: space-around;
+     flex-flow: column nowrap;
+     align-items: center;
+}
+
+footer li,
+footer li span,
+footer li a {
+     color: #000;
+     font-size: 1.4rem;
+}
+
+footer div {
+     display: flex;
+     flex-flow: column nowrap;
+     /* border: 2px solid white; */
+     align-self: center;
+     justify-content: center;
+     row-gap: 2rem;
+     height: 100%;
+     width: 15rem;
+}
+
+footer div ul {
+     display: flex;
+     justify-content: space-around;
+}
+
+ul.icons img {
+     width: 5rem;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
