@@ -1,6 +1,6 @@
 # Portfolio
 
-My personal portfolio displays my completed personal, team, and client projects.
+My personal portfolio displays my completed personal, team, and client projects. Check out my live portfolio at [cory-simpson.dev](https://cory-simpson.dev/).
 
 ## Acknowledgements
 
