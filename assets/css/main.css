@@ -71,9 +71,14 @@ input, select, textarea {
 	-ms-appearance: none;
 	appearance: none;
 }
+/* Extra */
+
+	.mb-4 {
+		margin-bottom: 4px !important;
+	}
 
 /* Basic */
-
+	
 	html {
 		box-sizing: border-box;
 	}
